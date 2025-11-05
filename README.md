@@ -56,6 +56,8 @@ titanic-pandas-proyecto/
 - pandas
 - numpy
 - plotly express
+- kaggle (opcional)
+- unzip (opcional)
 
 _nota: las librerias las puede descargar desde el archivo **requirements.txt**_
 

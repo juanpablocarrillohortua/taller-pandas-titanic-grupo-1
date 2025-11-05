@@ -1,5 +1,6 @@
-/data/
-
+data/*.csv
+data/**/*.csv
+data/*.zip
 
 .ipynb_checkpoints/
 *.ipynb-checkponts

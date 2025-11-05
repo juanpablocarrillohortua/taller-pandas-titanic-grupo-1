@@ -2,3 +2,5 @@ pandas
 numpy
 plotly-express
 matplotlib
+kaggle
+unzip
