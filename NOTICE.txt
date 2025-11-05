@@ -1,0 +1,15 @@
+NOTICE
+
+This project includes data from:
+
+"Zara Sales for EDA" by marixe, available on Kaggle:
+https://www.kaggle.com/datasets/marixe/zara-sales-for-eda
+
+Licensed under the Apache License, Version 2.0.
+You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+The dataset is used solely for academic purposes as part of an Exploratory Data Analysis (EDA).
+The author of this repository does not claim ownership of the original data.
+All credit for the dataset belongs to its creator, marixe.

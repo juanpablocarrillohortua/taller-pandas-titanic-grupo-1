@@ -71,6 +71,8 @@ En Jupyter use el atajo Ctrl + Shift + F10 para ejecutar el notebook completo.
 
 **Nombre:** Titanic - Machine Learning from Disaster 
 
+**Autor:** Will Cukierski
+
 **Fuente:** [Kaggle Dataset](https://www.kaggle.com/competitions/titanic/overview)  
 
 **Licencia:**  Apache License 2.0  
