@@ -1,0 +1,39 @@
+/data/
+
+
+.ipynb_checkpoints/
+*.ipynb-checkponts
+
+# Entornos Virtuales y Archivos de Python
+
+venv/
+env/
+.env
+
+# Archivos de caché y compilación de Python
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Directorio de cachés de pytest
+
+.pytest_cache/
+
+# Archivos de caché del analizador estático de Python (mypy)
+
+.mypy_cache/
+
+# Caché de IPython
+
+.ipython/
+
+# Caché de archivos de Visual Studio Code (si se usa)
+
+.vscode/
+
+# Historial de comandos locales
+
+.bash_history
+.zsh_history
