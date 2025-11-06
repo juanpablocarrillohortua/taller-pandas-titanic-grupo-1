@@ -7,7 +7,7 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 
 
 KAGGLE_DATASET_ID = f'titanic'  #extraido de la ruta web https://www.kaggle.com/competitions/titanic/data?select=train.csv
-DOWNLOAD_PATH = 'data' #carpeta donde se descarga
+DOWNLOAD_PATH = '../data' #carpeta donde se descarga
 
 
 
