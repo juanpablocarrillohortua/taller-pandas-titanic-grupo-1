@@ -4,3 +4,4 @@ plotly-express
 matplotlib
 kaggle
 unzip
+scipy
