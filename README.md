@@ -7,7 +7,7 @@
 ## Descripción del proyecto
 
 Este proyecto realiza un **Análisis Exploratorio de Datos (EDA)** sobre el conjunto de datos **“Titanic - Machine Learning from Disaster”**, disponible públicamente en [Kaggle](https://www.kaggle.com/competitions/titanic/overview).  
-El propósito es comprender los conceptos basicos de la libreria orientada a manejo de datos **PANDAS**, y posteriormente comprender el naufragio del Titanic, empezando desde preguntas basicas hasta realizar cruces de datos y graficos representativos de mortalidad segun edad, generro, entre otros.
+El propósito es comprender los conceptos básicos de la librería orientada a manejo de datos **PANDAS**, y posteriormente comprender el naufragio del Titanic, empezando desde preguntas básicas hasta realizar cruces de datos y gráficos representativos de mortalidad segun edad, género, entre otros.
 
 ---
 ## Objetivos
@@ -19,8 +19,8 @@ Realizar un **Análisis Estadistico de los datos o Análisis Exploratorio de Dat
 ### Objetivos específicos
 
 - Analizar el grupo etario que presento la mayor mortalidad.
-- Analizar el genero que presento la mayor mortalidad.
-- Hallar los diferentes grupos familiares de la base y ver como se distribuian por las cabinas (habitaciones).
+- Analizar el género que presento la mayor mortalidad.
+- Hallar los diferentes grupos familiares de la base y ver como se distribuían por las cabinas (habitaciones).
 
 ---
 ## Autores
