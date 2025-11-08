@@ -4,9 +4,9 @@
 
 # Instrucciones descarga base de datos:
 
-ingrese a [kaggle](https://www.kaggle.com/competitions/titanic/overview), una vez dentro del link acceda al apartado **Data** y presione el boton **Download All**, descompriam el zip que se descargo dentro de una carpeta llamada data en su repositorio local.
+Ingrese a [kaggle](https://www.kaggle.com/competitions/titanic/overview), una vez dentro del link acceda al apartado **Data** y presione el botón **Download All**, descomprima el zip que se descargo dentro de una carpeta llamada "data" en su repositorio local.
 
 
-Tambien puede ejecutar el script **descarga remota** (asegurese de tener las librerias descargadas y configurarmente el entorno de trabajo con kaggle, asegurese de tener el token de la API dentro de la carpeta **.kaggle** de lo contrario entre al directorio que le  dira el codigo de error del script y ahi cree su carpeta **.kaggle** y copie su archivo **kaggle.json**)
+También puede ejecutar el script **descarga remota** (asegúrese de tener las librerias descargadas y de configurar el entorno de trabajo con kaggle. De igual forma, verifique tener el token de la API dentro de la carpeta **.kaggle**. De lo contrario, acceda al directorio que le indique el código de error del script y cree allí su carpeta **.kaggle** y copie su archivo **kaggle.json**)
 
 ---
