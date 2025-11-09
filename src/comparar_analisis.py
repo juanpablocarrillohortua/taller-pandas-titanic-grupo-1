@@ -1,7 +1,16 @@
 import pandas as pd
+import os
 
-df_test = pd.read_csv("../data/test.csv")
-df_train = pd.read_csv("../data/train.csv")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) ##acceder a la carpeta del script, ruta absoluta de la carpeta
+
+data_dir = os.path.join(BASE_DIR, '..', 'data') ##suba un nivel y acceda a la carpeta data
+
+test_path = os.path.join(data_dir, 'test.csv')
+train_path = os.path.join(data_dir, 'train.csv')
+
+df_test = pd.read_csv(test_path)
+df_train = pd.read_csv(train_path)
 columnas = df_train.columns   #se usa el de todas las col
 
 #función cuyo funcionamiento se basa en tomar como arguemento las 2 bases de datos, las columnas como iterable, y el nombre de las bases(opcional)
