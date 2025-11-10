@@ -1,0 +1,7 @@
+grupo etario,Survived,Conteo,Supervivencia_Etiqueta,Total por grupo,Percentage
+mayor a 50 años,0,57,No Sobrevivió,93,61.29032258064516
+mayor a 50 años,1,36,Sí Sobrevivió,93,38.70967741935484
+menor a 10 años,0,28,No Sobrevivió,82,34.146341463414636
+menor a 10 años,1,54,Sí Sobrevivió,82,65.85365853658537
+ninguno de los grupos de interes,0,724,No Sobrevivió,1131,64.01414677276746
+ninguno de los grupos de interes,1,407,Sí Sobrevivió,1131,35.98585322723254
