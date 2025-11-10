@@ -6,3 +6,5 @@ kaggle
 unzip
 scipy
 scikit-learn
+seaborn
+matplotlib
