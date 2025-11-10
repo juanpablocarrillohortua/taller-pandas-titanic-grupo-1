@@ -11,7 +11,7 @@ train_path = os.path.join(data_dir, 'train.csv')
 
 df_test = pd.read_csv(test_path)
 df_train = pd.read_csv(train_path)
-columnas = df_train.columns   #se usa el de todas las col
+
 
 #funcionamiento:
 #se basa en el test de shapiro para seleccional un metodo de llenar los valores nulos. 
