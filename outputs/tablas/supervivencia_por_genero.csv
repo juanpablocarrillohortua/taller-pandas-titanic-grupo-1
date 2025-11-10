@@ -1,0 +1,5 @@
+Sex,Survived,Count,Supervivencia_Etiqueta,Total_by_Sex,Percentage
+female,0,114,No Sobrevivió,464,24.568965517241377
+female,1,350,Sí Sobrevivió,464,75.43103448275862
+male,0,695,No Sobrevivió,842,82.54156769596199
+male,1,147,Sí Sobrevivió,842,17.458432304038006
