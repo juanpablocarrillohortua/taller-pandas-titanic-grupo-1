@@ -69,3 +69,19 @@ def pie(n_pies, datas , col, titles):
     plt.suptitle('Comparación de Supervivencia por Grupo Etario') # Título principal
     plt.tight_layout()
     plt.show()
+
+def large_bar(data, x, y, color, segmentos_vert, segmentos_hor, titulo):
+    fig = px.bar(
+        data,
+        x=x,       # Eje X: categorías de edad
+        y=y,            # Eje Y: porcentaje 
+        color=color,       # Color: Muestra la proporción de 0 y 1
+        facet_col=segmentos_vert,        # Divide en segmentos verticales por Sexo
+        facet_row=segmentos_hor, # Divide en segmentos horizontales por Cabina
+        title=titulo,
+        category_orders={"Survived": [0, 1]} # Asegura el orden (No sobrevivió, Sobrevivió)
+    )
+
+    fig.update_layout(yaxis={'ticksuffix': '%'}) #agregar porcentajes
+    fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1])) # Limpia los títulos de los paneles (eliminar Sex=male)
+    fig.show()
