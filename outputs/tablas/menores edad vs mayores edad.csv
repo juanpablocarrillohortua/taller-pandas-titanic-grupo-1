@@ -1,0 +1,5 @@
+grupo etario,Survived,Count,Supervivencia_Etiqueta,Total por grupo etario,Percentage
+hombre,0,646,No Sobrevivió,760,85.0
+hombre,1,114,Sí Sobrevivió,760,15.0
+niño,0,49,No Sobrevivió,82,59.756097560975604
+niño,1,33,Sí Sobrevivió,82,40.243902439024396
