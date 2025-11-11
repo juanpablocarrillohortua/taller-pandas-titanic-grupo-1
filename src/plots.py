@@ -2,8 +2,9 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def bar(x, y, color, title, data):
-    fig = px.bar(
+
+def bar(x, y, color, title, data, percent=False):
+        fig = px.bar(
         data,
         x=x,                   # Eje X: grupo etario
         y=y,                 # Eje Y: Número de personas
@@ -11,11 +12,11 @@ def bar(x, y, color, title, data):
         barmode='group',           
         title=title,
         color_discrete_map={       
-            'Sí Sobrevivió': 'green',
-            'No Sobrevivió': 'red'
-        }
-    )
-    fig.show()
+                'Sí Sobrevivió': 'green',
+                'No Sobrevivió': 'red'
+            }
+        )
+        fig.show()
 
 
 def pie(n_pies, datas , col, titles):

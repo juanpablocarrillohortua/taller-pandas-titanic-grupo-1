@@ -88,3 +88,35 @@ def cruzar_ports_survived(data:pd.DataFrame, port_interest: Optional[Literal['S'
         return df_grouped[(df_grouped['Puerto de interes'] == puertos[port_interest]) & (df_grouped['Survived'] == 1)]
     else:
         return df_grouped
+    
+
+
+def segun_cabina(data):
+    def grupo_fam(cant):
+        if cant == 0:
+            return 'sin familiares a bordo (Grupo 1)'
+        elif 1 <= cant <= 3:
+            return 'familias pequeñas (Grupo 2)'
+        elif cant >= 4:
+            return 'familias grandes (Grupo 3)'
+
+    def tipo_cabin(cab):
+        tipos = ['A', 'B', 'C', 'D', 'E', 'F', 'N'] #N para Ninguna
+        for i in tipos:
+            if cab[0] == i:
+                return i
+    
+
+    df_familias = data.copy()
+    df_familias['Tipo familia'] = df_familias['Familiares'].apply(grupo_fam)
+    df_familias['Tipo cabina'] = df_familias['Cabin'].apply(tipo_cabin)
+
+
+    df_familias = df_familias.groupby(['Tipo cabina', 'Tipo familia']).size().reset_index(name='Count')
+    df_familias['Total'] = df_familias.groupby('Tipo cabina')['Count'].transform('sum')
+    df_familias['Percent'] = (df_familias['Count']/df_familias['Total']) * 100
+
+    #se elimina los tipo N (ninguna cabina)
+    df_familias = df_familias[df_familias['Tipo cabina'] != 'N']
+
+    return df_familias
