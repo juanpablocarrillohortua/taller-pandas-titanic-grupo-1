@@ -19,7 +19,7 @@ def bar(x, y, color, title, data, percent=False):
         fig.show()
 
 
-def pie(n_pies, datas , col, titles):
+def pie(n_pies, datas , col, titles, main_title):
     if n_pies == 2:
         fig, axes = plt.subplots(1, 2, figsize=(10, 5)) #lienzo de 1 fila y 2 columnas
     if n_pies == 3:
@@ -66,7 +66,7 @@ def pie(n_pies, datas , col, titles):
 
 
     # 3. Ajustar el layout y mostrar
-    plt.suptitle('Comparación de Supervivencia por Grupo Etario') # Título principal
+    plt.suptitle(main_title) # Título principal
     plt.tight_layout()
     plt.show()
 
