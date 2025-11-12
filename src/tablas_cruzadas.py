@@ -122,6 +122,11 @@ def cruzar_ports_survived(data:pd.DataFrame, port_interest: Optional[Literal['S'
     
 
 
+def tipo_cabin(cab):
+    tipos = ['A', 'B', 'C', 'D', 'E', 'F', 'N'] #N para Ninguna
+    for i in tipos:
+        if cab[0] == i:
+            return i
 
 
 def segun_cabina(data):
@@ -133,11 +138,6 @@ def segun_cabina(data):
         elif cant >= 4:
             return 'familias grandes (Grupo 3)'
 
-    def tipo_cabin(cab):
-        tipos = ['A', 'B', 'C', 'D', 'E', 'F', 'N'] #N para Ninguna
-        for i in tipos:
-            if cab[0] == i:
-                return i
     
 
     df_familias = data.copy()
@@ -153,3 +153,38 @@ def segun_cabina(data):
     df_familias = df_familias[df_familias['Tipo cabina'] != 'N']
 
     return df_familias
+
+
+def clacificar_edad_estandar(edad):
+    if edad < 10:
+        return 'Niño'
+    elif 10<= edad <=17:
+        return 'Adolescente'
+    elif 18 <= edad <= 49:
+        return 'Adulto'
+    else:
+        return 'Mayor'
+    
+def tiene_cabin(cab):
+    tipos = ['A', 'B', 'C', 'D', 'E', 'F'] #N para Ninguna
+    if cab[0] in tipos:
+        return 'Con cabina'
+    else:
+        return 'Sin cabina'
+
+
+def filtrar_genero_cabina_edad(data):
+    df_etaria_cabin = data.copy()
+
+    df_etaria_cabin['grupo etario'] = df_etaria_cabin['Age'].apply(clacificar_edad_estandar)
+    df_etaria_cabin['tiene cabina'] = df_etaria_cabin['Cabin'].apply(tiene_cabin)
+
+    df_etaria_cabin = df_etaria_cabin.groupby(['grupo etario', 'Sex', 'tiene cabina','Survived']).size().reset_index(name='Count')
+
+    #sumar el total de supervivientes y no supervivientes por sujetos segun edad, genero y posesion de cabina
+    df_etaria_cabin['Total'] = df_etaria_cabin.groupby(['grupo etario', 'Sex', 'tiene cabina'])['Count'].transform('sum') 
+
+    #porcentaje de supervivencia segun las tres caracteristicas de interes
+    df_etaria_cabin['Percent'] = (df_etaria_cabin['Count']/df_etaria_cabin['Total'])*100
+
+    return df_etaria_cabin

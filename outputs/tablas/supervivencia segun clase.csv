@@ -1,0 +1,7 @@
+Pclass,Survived,Count,Supervivencia_Etiqueta,Total_by_col,Percentage
+1,0,121,No Sobrevivió,321,37.69470404984423
+1,1,200,Sí Sobrevivió,321,62.30529595015576
+2,0,158,No Sobrevivió,277,57.03971119133574
+2,1,119,Sí Sobrevivió,277,42.96028880866426
+3,0,530,No Sobrevivió,708,74.85875706214689
+3,1,178,Sí Sobrevivió,708,25.141242937853107
