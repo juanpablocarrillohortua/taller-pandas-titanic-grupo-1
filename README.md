@@ -19,7 +19,7 @@ Realizar un **Análisis Estadistico de los datos o Análisis Exploratorio de Dat
 ### Objetivos específicos
 
 - Determinar la tasa de supervivencia por grupos etarios (niños, jóvenes, adultos y ancianos) para identificar la población con mayor índice de mortalidad.
-- Analizar el género que presento la mayor mortalidad.
+- Analizar el género que presentó la mayor mortalidad.
 - Hallar los diferentes grupos familiares de la base y ver como se distribuían por las cabinas (habitaciones).
 
 ---
@@ -59,7 +59,7 @@ titanic-pandas-proyecto/
 - kaggle (opcional)
 - unzip (opcional)
 
-_nota: las librerias las puede descargar desde el archivo **requirements.txt**_
+_nota: las librerías las puede descargar desde el archivo **requirements.txt**_
 
 _nota: no olvide descargar la base de datos (instrucciones en carpeta **data**)_
 
